@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
-OpenMAIC (Open Multi-Agent Interactive Classroom) — a Next.js 16 / React 19 app that turns topics or documents into AI-delivered classrooms with slides, quizzes, HTML simulations, PBL activities, a real-time whiteboard, TTS, and multi-agent discussion. Requires Node >= 20.9 and pnpm >= 10. Package manager is pinned via `packageManager` in `package.json`; always use pnpm (there is a `pnpm-workspace.yaml`).
+Drishti AI Tutor — a Next.js 16 / React 19 app that turns topics or documents into AI-delivered classrooms with slides, quizzes, HTML simulations, PBL activities, a real-time whiteboard, TTS, and multi-agent discussion. Requires Node >= 20.9 and pnpm >= 10. Package manager is pinned via `packageManager` in `package.json`; always use pnpm (there is a `pnpm-workspace.yaml`).
 
 ## Common commands
 
@@ -65,7 +65,7 @@ About 18 endpoints, including:
 
 ### Access control
 
-`middleware.ts` implements optional `ACCESS_CODE` gating via an HMAC-SHA256 signed cookie (`openmaic_access`). When `ACCESS_CODE` is unset the middleware is a no-op. `/api/access-code/*` and `/api/health` are whitelisted; other `/api/*` calls return 401 when unauthenticated. Verification uses the Edge-compatible Web Crypto API — keep it that way.
+`middleware.ts` implements optional `ACCESS_CODE` gating via an HMAC-SHA256 signed cookie (`drishti_access`). When `ACCESS_CODE` is unset the middleware is a no-op. `/api/access-code/*` and `/api/health` are whitelisted; other `/api/*` calls return 401 when unauthenticated. Verification uses the Edge-compatible Web Crypto API — keep it that way.
 
 ### Workspace packages
 

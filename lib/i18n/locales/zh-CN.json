@@ -6,7 +6,7 @@
     "loading": "加载中..."
   },
   "home": {
-    "slogan": "Generative Learning in Multi-Agent Interactive Classroom",
+    "slogan": "你的互动式 AI 学习助手",
     "greetingWithName": "嗨，{{name}}"
   },
   "toolbar": {
